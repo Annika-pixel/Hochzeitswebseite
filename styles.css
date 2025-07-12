@@ -632,15 +632,34 @@ h2 {
 }
 
 .rsvp-container select {
-  -webkit-appearance: none; /* für eleganteres Dropdown */
+  -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%232e4a36" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+
+  background-color: #fdfaf6;
+  border: 1px solid #ddd;
+  padding: 1.2rem;
+  padding-right: 2.5rem;
+  font-size: 1rem;
+  font-family: var(--sans);
+  border-radius: 1.5rem;
+  color: var(--text);
+  cursor: pointer;
+
+  /* Eigener Pfeil (SVG-Data-URI) */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='12' height='7' viewBox='0 0 12 7' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 7L0 0h12L6 7z' fill='%233b4a3a'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 1.2rem center;
-  background-size: 0.8rem;
-  padding-right: 2.5rem;
+  background-size: 12px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.rsvp-container select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(46, 74, 54, 0.2);
+}
+
 
 .rsvp-container button {
   align-self: center;
