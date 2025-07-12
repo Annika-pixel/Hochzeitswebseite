@@ -390,9 +390,21 @@ h1, h2, h3 {
   opacity: 0.2;
   transform: scaleX(1);
 }
+.section-divider::after {
+  content: "❤";
+  position: absolute;
+  top: -0.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg);
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+  color: #bfa76a !important;
+}
+
 @media (max-width: 768px) {
   .section-divider::after {
-    color: #bfa76a !improtant; /* oder irgendeine andere Farbe */
+    color: #bfa76a !important; /* oder irgendeine andere Farbe */
   }
 }
 
