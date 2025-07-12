@@ -387,17 +387,19 @@ h1, h2, h3 {
   transform: scaleX(1);
 }
 .section-divider::after {
-  content: "\2764";
+  content: "♥";
+  font-family: 'Playfair Display', serif; /* oder eine Serif-Schrift */
+  font-size: 1.3rem;
+  color: #bfa76a;
+  background: var(--bg);
+  padding: 0 0.5rem;
   position: absolute;
   top: -0.85rem;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--bg);
-  padding: 0 0.5rem;
-  font-size: 1.3rem;
-  color: #bfa76a !important;
   z-index: 10;
 }
+
 
 @media (max-width: 768px) {
   .section-divider::after {
@@ -1057,16 +1059,19 @@ h2, .story-text h2, .faq-section h2, .rsvp-header h2, .drive-content h2 {
 }
 
 .section-divider::after {
-  content: "\2764";
+  content: "♥";
+  font-family: 'Playfair Display', serif; /* oder eine Serif-Schrift */
+  font-size: 1.3rem;
+  color: #bfa76a;
+  background: var(--bg);
+  padding: 0 0.5rem;
   position: absolute;
   top: -0.85rem;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--bg); /* Hintergrundfarbe */
-  padding: 0 0.5rem;
-  font-size: 1.3rem;
-  color: #bfa76a;
+  z-index: 10;
 }
+
 
 @media (max-width: 768px) {
   .section-divider::after {
