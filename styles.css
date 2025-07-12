@@ -390,6 +390,12 @@ h1, h2, h3 {
   opacity: 0.2;
   transform: scaleX(1);
 }
+@media (max-width: 768px) {
+  .section-divider::after {
+    color: #bfa76a; /* oder irgendeine andere Farbe */
+  }
+}
+
 
 @media (max-width: 768px) {
   .story-grid {
