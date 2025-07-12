@@ -1059,6 +1059,13 @@ h2, .story-text h2, .faq-section h2, .rsvp-header h2, .drive-content h2 {
   color: #bfa76a;
 }
 
+@media (max-width: 768px) {
+  .section-divider::after {
+    color:  #bfa76a !important; /* oder irgendeine andere Farbe */
+  }
+}
+
+
 /* Burger-Stil (nur sichtbar auf kleinen Geräten) */
 .burger {
   display: none;
