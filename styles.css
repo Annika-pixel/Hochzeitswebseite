@@ -392,7 +392,7 @@ h1, h2, h3 {
 }
 @media (max-width: 768px) {
   .section-divider::after {
-    color: #bfa76a; /* oder irgendeine andere Farbe */
+    color: #bfa76a !improtant; /* oder irgendeine andere Farbe */
   }
 }
 
