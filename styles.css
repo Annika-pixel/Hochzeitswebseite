@@ -815,6 +815,25 @@ h2 {
   color: #203828;
 }
 
+.faq-question::before {
+  content: '\25B6';
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+
+  /* Ändere das hier */
+  color: var(--accent); /* statt --highlight */
+
+  transition: transform 0.3s ease;
+}
+
+.faq-question:hover::before {
+  color: var(--highlight);
+}
+
+
 .faq-answer {
   max-height: 0;
   overflow: hidden;
