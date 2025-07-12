@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teilnahme</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&family=Lora&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">Mrs. Mr. Schmidt</div>
+    <nav>
+      <ul>
+        <li><a href="index.html#story">Story</a></li>
+        <li><a href="index.html#ablauf">Ablauf</a></li>
+        <li><a href="index.html#fqa">FQA</a></li>
+        <li><a class="cta-button" href="#">Teilnahme</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Teilnahme Formular -->
+  <section id="rsvp" class="rsvp-section-flat">
+    <div class="rsvp-container-flat">
+      <div class="rsvp-text-flat">
+        <h2>Teilnahme</h2>
+        <form id="rsvp-form">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="E-Mail" required />
+          <select name="attending" required>
+            <option value="">Nimmst du teil?</option>
+            <option value="Ja, ich bin dabei">Ja, ich bin dabei</option>
+            <option value="Leider nein">Leider nein</option>
+          </select>
+          <input type="text" name="sekt" placeholder="Bringst du etwas zum Sektempfang mit?" />
+          <textarea name="message" placeholder="Nachricht (z. B. Allergien)"></textarea>
+          <button type="submit">Antwort senden</button>
+          <p id="rsvp-success">Vielen Dank für deine Rückmeldung!</p>
+        </form>
+      </div>
+      <div class="rsvp-image-flat">
+        <img src="sekt-removebg-preview.png" alt="Sektempfang Bild" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 Mrs. & Mr. Schmidt
+  </footer>
+</body>
+</html>
