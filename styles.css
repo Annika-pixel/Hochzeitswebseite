@@ -387,10 +387,10 @@ h1, h2, h3 {
   transform: scaleX(1);
 }
 .section-divider::after {
-  content: "♥";
-  font-family: 'Playfair Display', serif; /* oder eine Serif-Schrift */
+  content: "\2665"; /* ← das ist ♥ */
+  font-family: 'Times New Roman', 'Playfair Display', serif; /* KEINE Emoji-Font! */
+  color: #bfa76a; /* DEIN Farbwert */
   font-size: 1.3rem;
-  color: #bfa76a;
   background: var(--bg);
   padding: 0 0.5rem;
   position: absolute;
@@ -399,6 +399,7 @@ h1, h2, h3 {
   transform: translateX(-50%);
   z-index: 10;
 }
+
 
 
 @media (max-width: 768px) {
@@ -1059,10 +1060,10 @@ h2, .story-text h2, .faq-section h2, .rsvp-header h2, .drive-content h2 {
 }
 
 .section-divider::after {
-  content: "♥";
-  font-family: 'Playfair Display', serif; /* oder eine Serif-Schrift */
+  content: "\2665"; /* ← das ist ♥ */
+  font-family: 'Times New Roman', 'Playfair Display', serif; /* KEINE Emoji-Font! */
+  color: #bfa76a; /* DEIN Farbwert */
   font-size: 1.3rem;
-  color: #bfa76a;
   background: var(--bg);
   padding: 0 0.5rem;
   position: absolute;
@@ -1071,6 +1072,7 @@ h2, .story-text h2, .faq-section h2, .rsvp-header h2, .drive-content h2 {
   transform: translateX(-50%);
   z-index: 10;
 }
+
 
 
 @media (max-width: 768px) {
