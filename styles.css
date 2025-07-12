@@ -384,6 +384,7 @@ h1, h2, h3 {
 .section-divider::after {
   font-size: 1.4rem;
   top: -1.1rem;
+  color: #bfa76a !important;
 }
 .section-divider.visible {
   opacity: 0.2;
