@@ -1232,16 +1232,13 @@ h2, .story-text h2, .faq-section h2, .rsvp-header h2, .drive-content h2 {
 
 @media (max-width: 768px) {
   .hero {
-    background-attachment: scroll; /* Fix für iOS/Safari */
+    background-attachment: scroll !important; /* statt fixed */
     background-position: center top;
-    height: auto;
+    background-size: cover;
     min-height: 100vh;
-    padding-top: 20vh;
-    padding-bottom: 8vh;
-  }
-
-  .hero-content {
-    padding: 1.5rem;
+    padding-top: 25vh;
+    padding-bottom: 10vh;
   }
 }
+
 
