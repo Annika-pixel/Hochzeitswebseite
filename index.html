@@ -240,40 +240,23 @@
   </script>
   <script src="script.js"></script>
 
-  <script>
+ <script>
   document.addEventListener("DOMContentLoaded", function () {
+    // Navigation Toggle
     const toggle = document.querySelector(".nav-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
 
-    toggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("open");
+    toggle?.addEventListener("click", () => {
+      mobileMenu?.classList.toggle("open");
     });
 
-    // Optional: Menü schließen bei Klick auf Link
-    mobileMenu.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.remove("open");
-      });
-    });
-  });
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".nav-toggle");
-    const mobileMenu = document.querySelector(".mobile-menu");
-
-    toggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("open");
-    });
-
-    mobileMenu.querySelectorAll("a").forEach(link => {
+    mobileMenu?.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
         mobileMenu.classList.remove("open");
       });
     });
 
-    // === 💡 NEU: FAQ Aufklapp-Logik ===
+    // FAQ Toggle
     document.querySelectorAll('.faq-question').forEach((question) => {
       question.addEventListener('click', () => {
         const item = question.closest('.faq-item');
