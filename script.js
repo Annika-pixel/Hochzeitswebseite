@@ -54,6 +54,7 @@ faqItems.forEach(item => {
 });
 
 
+// Abschnitt-Trenner Animation
 const dividers = document.querySelectorAll('.section-divider');
 
 const observer = new IntersectionObserver(entries => {
@@ -81,17 +82,18 @@ function animateOnScroll() {
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('DOMContentLoaded', animateOnScroll);
 
-// --- Countdown Fehlerbehebung ---
+// Countdown Fehlerbehebung
 function showCountdown() {
   const countdown = document.getElementById('countdown');
   if (countdown) countdown.style.display = 'block';
 }
 window.addEventListener('DOMContentLoaded', showCountdown);
 
-// --- Story-Bild Slideshow ---
+
+// Story-Bild Slideshow
 const storyImages = [
   'couples-photography-afp-27.jpg',
-  // Hier können weitere Bildnamen ergänzt werden, z.B. 'bild2.jpg', 'bild3.jpg'
+  // Weitere Bilder einfügen falls nötig
 ];
 let currentStoryImg = 0;
 const storyImgElement = document.querySelector('.story-image img');
@@ -102,10 +104,28 @@ if (storyImgElement && storyImages.length > 1) {
   }, 20000);
 }
 
-// Hero Fade-In Animation (falls nicht durch CSS allein)
+
+// Hero Fade-In
 window.addEventListener('DOMContentLoaded', () => {
   const hero = document.querySelector('.hero-content');
   if (hero) hero.style.opacity = 1;
 });
 
 
+// === Mobile-Menü Toggle ===
+window.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector(".nav-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  if (toggle && mobileMenu) {
+    toggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("open");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+      });
+    });
+  }
+});
