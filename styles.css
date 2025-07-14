@@ -804,6 +804,7 @@ h2 {
 }
 
 .faq-question {
+  all: unset;
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -813,8 +814,9 @@ h2 {
   color: var(--accent);
   cursor: pointer;
   position: relative;
-  user-select: none;
+  width: 100%;
 }
+
 
 .faq-question .icon::before {
   content: "▸";
