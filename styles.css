@@ -1338,13 +1338,15 @@ a[href^="mailto"] {
 
 
 .footer::after {
-  content: '\2665'; /* Alternativer Unicode ♥ */
-  font-family: 'Times New Roman', 'Playfair Display', serif; /* KEINE Emoji-Font! */
+  content: "❤";
+  position: absolute;
+  top: -0.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg); /* Hintergrundfarbe */
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
   color: #bfa76a;
-  font-size: 2rem;
-  margin-left: 0.7rem;
-  vertical-align: middle;
-  display: inline-block;
 }
 
 
