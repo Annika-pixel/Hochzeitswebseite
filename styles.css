@@ -800,14 +800,15 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  padding: 1rem 2rem;
   font-family: var(--serif);
   font-size: 1.1rem;
   color: var(--accent);
   cursor: pointer;
-  position: relative;
-  user-select: none;
+  padding: 1rem 2rem;
+  transition: color 0.3s ease;
+  background: transparent;
 }
+
 
 .faq-question .icon::before {
   content: "▸";
@@ -911,19 +912,18 @@ h2, .story-text h2, .faq-section h2, .rsvp-header h2, .drive-content h2 {
 }
 
 .faq-question {
-  background: none;
-  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-family: var(--serif);
-  font-size: 1.05rem;
-  font-weight: 500;
+  font-size: 1.1rem;
   color: var(--accent);
-  text-align: left;
-  width: 100%;
-  padding: 0.8rem 1rem 0.8rem 2rem;
   cursor: pointer;
-  position: relative;
+  padding: 1rem 2rem;
   transition: color 0.3s ease;
+  background: transparent;
 }
+
 
 
 
