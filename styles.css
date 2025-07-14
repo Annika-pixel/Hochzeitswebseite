@@ -961,6 +961,14 @@ h2, .story-text h2, .faq-section h2, .rsvp-header h2, .drive-content h2 {
 }
 
 
+.faq-question .icon::before {
+  content: "›"; /* HTML-Zeichen, KEIN Unicode-Symbol */
+  font-family: 'Times New Roman', 'Playfair Display', serif; /* KEINE Emoji-Font! */
+  font-size: 1rem;
+  color: var(--accent);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
 
 
 
