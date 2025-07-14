@@ -1341,5 +1341,9 @@ a[href^="mailto"] {
   text-decoration: none;
   font-weight: inherit;
 }
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
 
 
