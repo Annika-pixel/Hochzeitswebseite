@@ -1336,17 +1336,13 @@ a[href^="mailto"] {
   display: none;
 }
 
-
-.footer::after {
-  content: "❤";
-  position: absolute;
-  top: -0.85rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--bg); /* Hintergrundfarbe */
-  padding: 0 0.5rem;
-  font-size: 1.3rem;
+.heart {
   color: #bfa76a;
+  font-family: 'Times New Roman', 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
 }
+
 
 
