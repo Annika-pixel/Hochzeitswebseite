@@ -1319,7 +1319,16 @@ body {
 
 a[href^="tel"],
 a[href^="mailto"] {
-  color: inherit;
+  color:.footer::after {
+  content: '\2665'; /* Alternativer Unicode ♥ */
+  font-family: 'Times New Roman', 'Playfair Display', serif; /* KEINE Emoji-Font! */
+  color: #bfa76a;
+  font-size: 1.3rem;
+  margin-left: 0.7rem;
+  vertical-align: middle;
+  display: inline-block;
+}
+ inherit;
   text-decoration: none;
   font-weight: inherit;
 }
@@ -1327,5 +1336,15 @@ a[href^="mailto"] {
   display: none;
 }
 
+
+.footer::after {
+  content: '\2665'; /* Alternativer Unicode ♥ */
+  font-family: 'Times New Roman', 'Playfair Display', serif; /* KEINE Emoji-Font! */
+  color: #bfa76a;
+  font-size: 1.3rem;
+  margin-left: 0.7rem;
+  vertical-align: middle;
+  display: inline-block;
+}
 
 
