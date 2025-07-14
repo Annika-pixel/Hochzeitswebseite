@@ -822,6 +822,16 @@ h2 {
   top: 50%;
   transform: translateY(-50%);
   font-size: 0.9rem;
+  color: var(--accent);
+  font-family: 'Arial', 'sans-serif'; /* Keine Emoji-Schriften */
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  transition: transform 0.3s ease;
+}
+
 
   /* Ändere das hier */
   color: var(--accent); /* statt --highlight */
