@@ -840,23 +840,6 @@ h2 {
   color: #203828;
 }
 
-.faq-question::before {
-  content: '\25B6';
-  position: absolute;
-  left: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.9rem;
-  color: var(--accent);
-  font-family: 'Arial', 'sans-serif'; /* Keine Emoji-Schriften */
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  transition: transform 0.3s ease;
-}
-
 
   /* Ändere das hier */
   color: var(--accent); /* statt --highlight */
@@ -864,9 +847,6 @@ h2 {
   transition: transform 0.3s ease;
 }
 
-.faq-question:hover::before {
-  color: var(--highlight);
-}
 
 
 .faq-answer {
@@ -970,20 +950,23 @@ h2, .story-text h2, .faq-section h2, .rsvp-header h2, .drive-content h2 {
   transition: color 0.3s ease;
 }
 
-.faq-question::before {
-  content: '\25B6';
-  position: absolute;
-  left: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
+.faq-question .icon::before {
+  content: '\25B6'; /* Unicode für ► */
+  display: inline-block;
+  font-family: Arial, sans-serif; /* KEINE Emoji-Schrift! */
   font-size: 0.9rem;
-  color: var(--highlight);
-  transition: transform 0.3s ease;
+  color: var(--accent);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.faq-item.active .faq-question::before {
-  transform: translateY(-50%) rotate(90deg);
+.faq-item.active .faq-question .icon::before {
+  transform: rotate(90deg);
 }
+
+.faq-question:hover .icon::before {
+  color: var(--highlight);
+}
+
 
 .faq-question:hover {
   color: var(--highlight);
