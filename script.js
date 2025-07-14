@@ -36,18 +36,23 @@ setInterval(updateCountdown, 1000);
 updateCountdown();
 
 
-
 // FAQ Akkordeon (sanftes Ausklappen, Pfeil dreht sich)
 const faqItems = document.querySelectorAll('.faq-item');
 faqItems.forEach(item => {
   const question = item.querySelector('.faq-question');
   question.addEventListener('click', () => {
-    item.classList.toggle('active');
-    faqItems.forEach(other => {
-      if (other !== item) other.classList.remove('active');
-    });
+    const isActive = item.classList.contains('active');
+
+    // Alle anderen schließen
+    faqItems.forEach(i => i.classList.remove('active'));
+
+    // Nur öffnen, wenn es vorher nicht aktiv war
+    if (!isActive) {
+      item.classList.add('active');
+    }
   });
 });
+
 
 const dividers = document.querySelectorAll('.section-divider');
 
