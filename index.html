@@ -185,42 +185,42 @@
   <h2>FAQ</h2>
 
   <div class="faq-item">
-    <button class="faq-question"><span class="icon"></span> Wo findet die Hochzeit statt?</button>
+    <div class="faq-question"><span class="icon"></span> Wo findet die Hochzeit statt?</div>
     <div class="faq-answer">
       <p>Die Trauung und Feier finden auf dem Landgut Sonnenschein, Musterstraße 1, 12345 Musterstadt statt. Parkplätze stehen direkt vor Ort ausreichend zur Verfügung.</p>
     </div>
   </div>
 
   <div class="faq-item">
-    <button class="faq-question"><span class="icon"></span> Was wünschen wir uns zur Hochzeit?</button>
+    <div class="faq-question"><span class="icon"></span> Was wünschen wir uns zur Hochzeit?</div>
     <div class="faq-answer">
       <p>Das größte Geschenk seid ihr – aber falls ihr uns zusätzlich eine Freude machen möchtet, freuen wir uns über einen Beitrag zu unseren Flitterwochen. Eine kleine Geschenkbox steht am Hochzeitstag bereit.</p>
     </div>
   </div>
 
   <div class="faq-item">
-    <button class="faq-question"><span class="icon"></span> Gibt es einen Dresscode?</button>
+    <div class="faq-question"><span class="icon"></span> Gibt es einen Dresscode?</div>
     <div class="faq-answer">
       <p>Wir freuen uns über festliche, sommerlich-elegante Kleidung. Da die Trauung im Freien stattfindet, denkt bitte an passende Schuhe für Wiesenboden.</p>
     </div>
   </div>
 
   <div class="faq-item">
-    <button class="faq-question"><span class="icon"></span> Wer ist am Hochzeitstag Ansprechpartner bei Fragen?</button>
+    <div class="faq-question"><span class="icon"></span> Wer ist am Hochzeitstag Ansprechpartner bei Fragen?</div>
     <div class="faq-answer">
       <p>Unsere lieben Trauzeugen stehen euch bei Fragen oder spontanen Programmpunkten jederzeit zur Seite:<br>Anna Musterfrau – 0123 456789<br>Max Mustermann – 0987 654321</p>
     </div>
   </div>
 
   <div class="faq-item">
-    <button class="faq-question"><span class="icon"></span> Gibt es vegetarische oder vegane Optionen?</button>
+    <div class="faq-question"><span class="icon"></span> Gibt es vegetarische oder vegane Optionen?</div>
     <div class="faq-answer">
       <p>Ja, natürlich! Vegetarische und vegane Gerichte sind fester Bestandteil unseres Menüs.</p>
     </div>
   </div>
 
   <div class="faq-item">
-    <button class="faq-question"><span class="icon"></span> Gibt es Übernachtungsmöglichkeiten in der Nähe?</button>
+    <div class="faq-question"><span class="icon"></span> Gibt es Übernachtungsmöglichkeiten in der Nähe?</div>
     <div class="faq-answer">
       <p>Zimmer im Hotel Musterhof sind unter dem Stichwort „Hochzeit Schmidt“ reserviert. Bitte bis zum 01.08.2025 buchen.</p>
     </div>
@@ -242,9 +242,9 @@
   </script>
   <script src="script.js"></script>
 
- <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
-    // Navigation Toggle
+    // Mobile-Menü Toggle
     const toggle = document.querySelector(".nav-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
 
@@ -258,8 +258,8 @@
       });
     });
 
-    // FAQ Toggle
-    document.querySelectorAll('.faq-question').forEach((question) => {
+    // FAQ Akkordeon
+    document.querySelectorAll('.faq-question').forEach(question => {
       question.addEventListener('click', () => {
         const item = question.closest('.faq-item');
         item.classList.toggle('active');
@@ -267,6 +267,7 @@
     });
   });
 </script>
+
 
 
 </body>
