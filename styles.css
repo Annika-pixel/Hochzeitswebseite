@@ -816,9 +816,19 @@ h2 {
 }
 
 .faq-question .icon {
-  transition: transform 0.3s ease, color 0.3s ease;
   color: var(--accent);
   font-size: 0.9rem;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-question .icon::before {
+  content: "›"; /* kein Unicode, kein Emoji */
+  font-family: 'Times New Roman', 'Playfair Display', serif;
+  color: var(--accent);
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
 
 
 .faq-question:hover .icon {
