@@ -827,7 +827,7 @@ h2 {
 
 
 .faq-question .icon::before {
-  content: "▸";
+  content: "▸"; /* Goldfarbener Pfeil */
   font-size: 1rem;
   color: var(--highlight);
   transition: transform 0.3s ease;
@@ -836,6 +836,7 @@ h2 {
 .faq-item.active .faq-question .icon::before {
   transform: rotate(90deg);
 }
+
 
 .faq-answer {
   max-height: 0;
