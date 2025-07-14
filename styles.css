@@ -799,6 +799,10 @@ h2 {
 }
 
 .faq-question {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   width: 100%;
   text-align: left;
   background: none;
@@ -810,6 +814,27 @@ h2 {
   cursor: pointer;
   transition: color 0.3s ease;
 }
+
+.faq-question .icon {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: var(--accent);
+  transition: transform 0.3s ease;
+}
+
+.faq-question .icon::before {
+  content: '\25B6'; /* Unicode für ► */
+}
+
+.faq-question:hover .icon {
+  color: var(--highlight);
+}
+
+.faq-item.active .faq-question .icon {
+  transform: rotate(90deg);
+}
+
 
 .faq-question:hover {
   color: #203828;
