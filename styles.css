@@ -1336,12 +1336,14 @@ a[href^="mailto"] {
   display: none;
 }
 
-.heart {
+.footer::after {
+  content: '\2665'; /* Alternativer Unicode ♥ */
+  font-family: 'Times New Roman', 'Playfair Display', serif; /* KEINE Emoji-Font! */
   color: #bfa76a;
-  font-family: 'Times New Roman', 'Playfair Display', serif;
-  font-size: 1.3rem;
-  margin-left: 0.5rem;
+  font-size: 2.3rem;
+  margin-left: 0.7rem;
   vertical-align: middle;
+  display: inline-block;
 }
 
 
