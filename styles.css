@@ -818,7 +818,7 @@ h2 {
 
 .faq-question .icon::before {
   content: "▸";
-  font-size: 1.2rem; /* Größer! */
+  font-size: 2.2rem; /* Größer! */
   color: var(--highlight);
   transition: transform 0.3s ease;
 }
