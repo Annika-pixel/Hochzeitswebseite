@@ -785,6 +785,11 @@ h2 {
   margin: 0 auto;
   padding: 6rem 2rem;
 }
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 
 .faq-item {
   background: #fffdfa;
