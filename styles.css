@@ -807,32 +807,23 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  width: 100%;
   padding: 1rem 2rem;
   font-family: var(--serif);
   font-size: 1.1rem;
   color: var(--accent);
-  background: none;
-  border: none;
-  text-align: left;
   cursor: pointer;
-  transition: color 0.3s ease;
   position: relative;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
-
 .faq-question .icon::before {
-  content: "▸"; /* Goldfarbener Pfeil */
-  font-size: 1rem;
+  content: "▸";
+  font-size: 1.2rem; /* Größer! */
   color: var(--highlight);
   transition: transform 0.3s ease;
 }
 
+/* Drehung wenn aktiv */
 .faq-item.active .faq-question .icon::before {
   transform: rotate(90deg);
 }
