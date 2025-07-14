@@ -258,6 +258,13 @@
   });
 </script>
 
+<script>
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      question.parentElement.classList.toggle('active');
+    });
+  });
+</script>
 
 
 </body>
