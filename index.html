@@ -241,51 +241,46 @@
     <p>Wir freuen uns auf euch – &copy; 2025</p>
   </footer>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
-  <script src="script.js"></script>
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
 
-  <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
+    // === MOBILE MENU ===
     const toggle = document.querySelector(".nav-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
 
-    toggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("open");
-    });
-
-    // Optional: Menü schließen bei Klick auf Link
-    mobileMenu.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        mobileMenu.classList.remove("open");
+    if (toggle && mobileMenu) {
+      toggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
       });
-    });
-  });
-</script>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
+      mobileMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("open");
+        });
+      });
+    }
+
+    // === FAQ ACCORDION ===
     const faqItems = document.querySelectorAll(".faq-item");
-
     faqItems.forEach(item => {
       const question = item.querySelector(".faq-question");
-
-      question.addEventListener("click", () => {
-        // Alle anderen schließen (optional)
-        faqItems.forEach(i => {
-          if (i !== item) i.classList.remove("active");
+      if (question) {
+        question.addEventListener("click", () => {
+          // Optional: alle anderen schließen
+          faqItems.forEach(i => {
+            if (i !== item) i.classList.remove("active");
+          });
+          item.classList.toggle("active");
         });
-
-        // Aktuelles toggeln
-        item.classList.toggle("active");
-      });
+      }
     });
   });
 </script>
-
 
 
 
