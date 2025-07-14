@@ -818,7 +818,7 @@ h2 {
 
 .faq-question .icon::before {
   content: "▸";
-  font-size: 2.2rem; /* Größer! */
+  font-size: 1.5rem; /* Größer! */
   color: var(--highlight);
   transition: transform 0.3s ease;
 }
@@ -1341,7 +1341,7 @@ a[href^="mailto"] {
   content: '\2665'; /* Alternativer Unicode ♥ */
   font-family: 'Times New Roman', 'Playfair Display', serif; /* KEINE Emoji-Font! */
   color: #bfa76a;
-  font-size: 1.3rem;
+  font-size: 2rem;
   margin-left: 0.7rem;
   vertical-align: middle;
   display: inline-block;
