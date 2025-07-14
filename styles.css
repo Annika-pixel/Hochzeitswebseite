@@ -1348,4 +1348,18 @@ a[href^="mailto"] {
   margin-bottom: 2rem;
 }
 
+.faq-question .icon::before {
+  content: "▸"; /* Pfeil nach rechts */
+  font-size: 1.5rem;
+  color: var(--highlight);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Dreht den Pfeil nach unten bei aktiver Frage */
+.faq-item.active .faq-question .icon::before {
+  transform: rotate(90deg); /* → zeigt nach unten */
+}
+
+
 
