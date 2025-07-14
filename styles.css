@@ -942,16 +942,7 @@ h2, .story-text h2, .faq-section h2, .rsvp-header h2, .drive-content h2 {
   transition: color 0.3s ease;
 }
 
-.faq-question::before {
-  content: '\25B6';
-  position: absolute;
-  left: 0.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.9rem;
-  color: var(--highlight);
-  transition: transform 0.3s ease;
-}
+
 
 .faq-item.active .faq-question::before {
   transform: translateY(-50%) rotate(90deg);
